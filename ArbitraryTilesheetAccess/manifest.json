@@ -1,0 +1,9 @@
+{
+    "Name": "Arbitrary Tilesheet Access",
+    "Author": "Spiderbuttons",
+    "Version": "1.0.0",
+    "Description": "Allows mod makers to use images in maps as tilesheets that come from locations other than the game's typical Maps folder.",
+    "UniqueID": "Spiderbuttons.ArbitraryTilesheetAccess",
+    "EntryDll": "ArbitraryTilesheetAccess.dll",
+    "UpdateKeys": [ "Nexus:30001" ]
+}

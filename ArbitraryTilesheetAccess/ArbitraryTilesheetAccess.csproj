@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AssemblyName>ArbitraryTilesheetAccess</AssemblyName>
+        <RootNamespace>ArbitraryTilesheetAccess</RootNamespace>
+        <Version>2.0.0</Version>
+        <TargetFramework>net6.0</TargetFramework>
+        <LangVersion>Latest</LangVersion>
+        <GamePath>C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley</GamePath>
+        <GameModsPath>$(GamePath)\ModsDebug</GameModsPath>
+        <EnableHarmony>true</EnableHarmony>
+        <EnableModDeploy>true</EnableModDeploy>
+        <EnableModZip>true</EnableModZip>
+        <ModFolderName>ArbitraryTilesheetAccess</ModFolderName>
+        <Title>ArbitraryTilesheetAccess</Title>
+        <Authors>Spiderbuttons</Authors>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>bin\Debug</OutputPath>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <PublicizeAll>true</PublicizeAll>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.*" />
+    </ItemGroup>
+</Project>
